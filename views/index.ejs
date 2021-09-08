@@ -1,0 +1,33 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--/include header-->
+
+
+<!-- <header> -->
+  
+</header>
+<a href="/add_user" class="newuser" >
+    <span>new user</span>
+</a>
+<main>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>name</th>
+                <th>email</th>
+                <th>gender</th>
+                <th>status</th>
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%- include('include/_show') %>
+        </tbody>
+    </table>
+    
+</main>
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

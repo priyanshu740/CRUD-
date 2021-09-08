@@ -1,0 +1,19 @@
+<% for(var i=0; i< users.length; i++) {%>
+
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= users[i].name %></td>
+    <td><%= users[i].email %></td>
+    <td><%= users[i].gender %></td>
+    <td><%= users[i].status %></td>
+    <td>
+
+        <a href="/update?id=<%= users[i]._id%>" >
+            <span>update</span>
+        </a>
+        <a href="" class='delete' data-id=<%= users[i]._id%>> 
+            <i class="fas fa-times">delete</i>
+        </a>
+    </td>
+</tr>
+<%}%>
